@@ -1,6 +1,28 @@
 <html>
   <head>
-  </head>
-  <body>
-    <h1>Works!</h1>
-  </body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="keywords" content="HTML, CSS, JavaScript">
+ <link rel="stylesheet" href="https://commandline.newtristanchann.repl.co/style.css">
+ <title>cl.api demo</title>
+ </head>
+ <div class="console">
+  <header>
+    <p>demo@clapi</p>
+  </header>
+  <div class="consolebody">
+    <p>Welcome to CL.api!</p>
+    <p>><span> </span><input id="myInput" value="Type here...">
+    <p id="myBtn" onclick="javascript:alert('Dont worry, its coming soon!')"></p>
+
+ <script>
+ var input = document.getElementById("myInput");
+ input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("myBtn").click();
+  }
+ });
+ </script>
+  </div>
+ </div>
+</html>
